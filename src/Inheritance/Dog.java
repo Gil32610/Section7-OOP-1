@@ -10,7 +10,8 @@ public class Dog extends Animal {
     public Dog() {
         super("Mutt", "Big", 50);
     }
-    public Dog(String type, double weight){
+
+    public Dog(String type, double weight) {
         this(type, weight, "Perky", "Curled");
     }
 
@@ -28,13 +29,41 @@ public class Dog extends Animal {
                 "} " + super.toString();
     }
 
-    public void makeNoise(){
-
+    public void makeNoise() {
+        if(type == "Wolf"){
+            System.out.println("WOO WOOOOOOO");
+        }
+        bark();
+        System.out.println();
     }
 
     @Override
     public void move(String speed) {
         super.move(speed);
-        System.out.println("Dogs walk, run and wag their tail");
+        // System.out.println("Dogs walk, run and wag their tail");
+        if (speed == "slow") {
+            walk();
+            wagTail();
+        } else {
+            run();
+            bark();
+        }
+        System.out.println();
+    }
+
+    private void bark() {
+        System.out.println("Woof!");
+    }
+
+    private void walk() {
+        System.out.println("Dog walking");
+    }
+
+    private void wagTail() {
+        System.out.println("Tail Wagging");
+    }
+
+    private void run() {
+        System.out.println("Dog Running");
     }
 }
