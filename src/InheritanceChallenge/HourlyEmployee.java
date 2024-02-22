@@ -4,8 +4,8 @@ public class HourlyEmployee extends Employee {
 
     private double payRate;
 
-    public HourlyEmployee(String name, String birthDate, long employeeId, String hireDate) {
-        super(name, birthDate, employeeId, hireDate);
+    public HourlyEmployee(String name, String birthDate, String hireDate) {
+        super(name, birthDate, hireDate);
         this.payRate = 0.15;
     }
 
