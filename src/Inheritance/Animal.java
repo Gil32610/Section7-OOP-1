@@ -1,6 +1,6 @@
 package Inheritance;
 
-public class Animal {
+public class Animal extends Object{
     protected String type;
     private String size;
     private double weight;
