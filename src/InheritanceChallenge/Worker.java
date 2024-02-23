@@ -18,7 +18,7 @@ public class Worker {
     }
 
     public double collectPay() {
-        return 2000.0;
+        return 0;
     }
 
     public void terminate(String endDate) {

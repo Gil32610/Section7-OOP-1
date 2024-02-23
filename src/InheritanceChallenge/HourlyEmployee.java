@@ -6,16 +6,14 @@ public class HourlyEmployee extends Employee {
 
     public HourlyEmployee(String name, String birthDate, String hireDate) {
         super(name, birthDate, hireDate);
-        this.payRate = 0.15;
+        this.payRate = 15;
     }
 
     @Override
     public double collectPay(){
-     double payment = super.collectPay();
-     return payment*payRate;
+     return 40*payRate;
     }
-    public void getDoublePay() {
-        this.payRate*=2;
-        System.out.println(name+ " is now getting double payment");
+    public double getDoublePay() {
+        return 2*collectPay();
     }
 }
