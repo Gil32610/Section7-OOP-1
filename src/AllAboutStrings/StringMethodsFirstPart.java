@@ -1,6 +1,6 @@
 package AllAboutStrings;
 
-public class Main {
+public class StringMethodsFirstPart {
     public static void main(String[] args) {
         printInformation("Hello World");
         printInformation("");

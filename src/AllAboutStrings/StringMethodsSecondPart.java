@@ -1,6 +1,6 @@
 package AllAboutStrings;
 
-public class StringMethods {
+public class StringMethodsSecondPart {
     public static void main(String[] args) {
 
         //String manipulation methods
